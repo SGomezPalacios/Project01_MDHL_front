@@ -1,0 +1,13 @@
+*{
+    background-color: #000000;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.index-img1{
+    display:none;
+}
+.index-logo{
+    width: 50%;
+}
