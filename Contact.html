@@ -5,32 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mighty Ducks Hockey League - Contact</title>
-    <!-- <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="style2.css"> -->
-    <link rel="stylesheet" href="style3.css">
+<!--     <link rel="stylesheet" href="./src/css/style1.css">
+    <link rel="stylesheet" href="./src/css/style2.css"> -->
+    <link rel="stylesheet" href="./src/css/style3.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <figure>
-                <img src="./logo_MDHL.png" alt="Logo Mighty Ducks Hockey League" width="150" height="150">
-            </figure>
-            <h1>Mighty Ducks Hockey League</h1>
+    <header class="header">
+        <h1 class="title">Mighty Ducks Hockey League</h1>
+        <nav class="nav">
             <a href="./index.html">HOME</a>
             <a href="./AboutMDHL.html">ABOUT MDHL</a>
             <a href="#">CONTACT</a>
         </nav>
+        <img class="index-logo" src="./src/assets/logo_MDHL.png" alt="Logo Mighty Ducks Hockey League">
+        <figure id="ball"></figure>
     </header>
     <main>
         <section>
-            <h2>Contact Us</h2>
+            <h2 class="title2">Contact Us</h2>
+            <div class="content">
+                <article>             
+                    <h4>Please email us at <a href="./index.html">mdhl@chihockey.org</a></h4>
+                    <p>We reply to your email as soon as we can.</p>  
+                </article>
+            </div>
+        </section>  
+        <section class="gallery">
+            <h3>Gallery</h3>    
             <figure>
-                <img src="./hockey_3.jpg" alt="Img_Hockey3">
+                <img class="index-img1" src="./src/assets/hockey_1.jpg" alt="img_hockey1">
+                <img class="index-img2" src="./src/assets/hockey_2.jpg" alt="img_hockey2">
+                <img class="index-img3" src="./src/assets/hockey_3.jpg" alt="img_hockey3">
             </figure>
-            <article>             
-                <h4>Please email us at <a href="./index.html">mdhl@chihockey.org</a></h4>
-                <p>We reply to your email as soon as we can.</p>  
-            </article>
         </section>
     </main>
 </body>
