@@ -1,6 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: lighter;
+    background-color: #000000;
+    letter-spacing: 1px;
+}
+
+.header{
+    background-image: url(../assets/playground.png);
+    background-position: center center;
+    background-size:cover;
+    height: 300px;
+    border: 1px solid #adadad;
+}
+
+.header #ball{
+    border-radius: 50px;
+    background-color: #000000;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    animation: rebote_ball 8s ease-out infinite alternate;
+}
+
+.title{
     font-family: 'Anton', sans-serif;
+    position: absolute;
+    left:10rem;
+    top:15.8rem;
+    font-size: 4rem;
+    color: #f7e02d;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-shadow: 2px 0px 2px #ff4400;
+    background-color: transparent;
+}
+
+.index-logo {
+    width: 12rem;
+    position: fixed; 
+    bottom: 2rem; 
+    right: 5rem;
+}
+
+.nav{
+    margin-left: 40px;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    background-color: transparent;
+}
+.nav a{
+    margin: 5px;
+    font-size: 1.2rem;
+    display: inline-block;
+    border: none;
+    background-color: #000000;
+    border-bottom: 2px solid #adadad;
+    border-right: 2px solid #adadad;
+    border-radius: 5px;
+    padding: 3px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.header a:hover{
+    background-color: #ff4400;
+    color: #000000;
+    transform: scale(0.9);
+}
+.title2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    width: 15rem;
+    position: absolute; 
+    top: 25rem; 
+    left: 5rem;
+    color:aliceblue;
+    text-shadow: 2px 0px 2px #609f97;
+}
+.content{
+    padding-left: 30rem;
+    padding-top: 8rem;
+    width: 80%;
+    color:rgb(229, 230, 231);
+}
+
+a{
+    padding: 20px;
+}
+
+h4{
+    padding: 10px;
+    text-shadow: 1px 0px 1px #ff4400;
+}
+
+h4 a{
+    color: #ff4400;
+}
+p{
+    padding: 10px;
+    text-indent: 30px;
+}
+
+h3{
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 15rem;
+    top: 45rem; 
+    left: 5rem;
+    color:aliceblue;
+    text-shadow: 2px 0px 2px #609f97;
+}
+.gallery {
+    margin: 10rem;
+}
+
+.gallery img {
+    display: inline-block;
+    width: 20%;
+    transition: all 300ms;
+    padding-bottom: 100px;
+}
+
+.gallery img:hover{
+    transform: scale(1.3);
+}
+
+.index-img1{
+    position: absolute;
+    left: 300px;
+}
+.index-img2{
+    position: absolute;
+    right: 760px;
+}
+.index-img3{
+    position: absolute;
+    right: 300px;
+}
+
+
+
+
+/* Animation bounce effect background */
+@keyframes rebote_ball {
+    0% {
+        left: 0%;
+        top: 40%;
+    }
+    10% {
+        left: 30%;
+        top: 0%;
+    }
+    30% {
+        left: 100%;
+        top: 50%;
+    }
+    75% {
+        left: 60%;
+        top: 100%;
+    }
+    100% {
+        left: 0%;
+        top: 40%;    
+    }
 }
 
