@@ -1,154 +1,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@200&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: lighter;
+    font-family: 'Asap', sans-serif;
     background-color: #000000;
     letter-spacing: 1px;
+    color:whitesmoke;
 }
 
+/* Header pages */
 .header{
-    background-image: url(../assets/playground.png);
+    background-image: url(../assets/design1_image2.jpg);
+    background-position: center 30%;
+    background-size:cover;
+    height: 300px;
+}
+
+/* Index header */
+.header-in{
+    background-image: url(../assets/background.png);
     background-position: center center;
     background-size:cover;
     height: 300px;
     border: 1px solid #adadad;
 }
-
-.header #ball{
+.header-in #ball{
     border-radius: 50px;
-    background-color: #000000;
+    background-color: #000000b9;
     width: 10px;
     height: 10px;
     position: relative;
     animation: rebote_ball 8s ease-out infinite alternate;
 }
 
+/* Main title: name */
 .title{
     font-family: 'Anton', sans-serif;
-    position: absolute;
-    left:10rem;
-    top:15.8rem;
-    font-size: 4rem;
+    font-size: 50px;
     color: #f7e02d;
     text-transform: uppercase;
     letter-spacing: 8px;
-    text-shadow: 2px 0px 2px #ff4400;
-    background-color: transparent;
+    background-color: #ebebeb5d;
+    padding: 15px 15px 15px 50px;
+    text-align: left;
+    position: absolute;
+    top: calc(300px - 54px);
+    -webkit-text-stroke: 1pt #f94200;
+    width: 100%;
+    font-weight:lighter;
 }
 
 .index-logo {
-    width: 12rem;
+    width: 10rem;
     position: fixed; 
-    bottom: 2rem; 
-    right: 5rem;
-}
-
-.nav{
-    margin-left: 40px;
-    position: absolute;
-    top: 2rem;
-    right: 3rem;
+    bottom: 50px; 
+    left: 85px;
     background-color: transparent;
 }
+/* Navigation bar*/
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f1f1f196;
+    height: 45px;
+}
+.absolute{
+    position:absolute;
+}
 .nav a{
-    margin: 5px;
-    font-size: 1.2rem;
-    display: inline-block;
+    background-color: transparent;
+    margin: 6px;
+    font-size: 1rem;
     border: none;
-    background-color: #000000;
-    border-bottom: 2px solid #adadad;
-    border-right: 2px solid #adadad;
-    border-radius: 5px;
     padding: 3px 20px;
-    color: #ffffff;
+    color: #1a1a1a;
     cursor: pointer;
     text-decoration: none;
+    justify-content: space-evenly;
+    font-weight:bold;
 }
-.header a:hover{
-    background-color: #ff4400;
-    color: #000000;
-    transform: scale(0.9);
+.nav a:hover{
+    color:#609f97;
+    transform: scale(1.1);
+    border: solid 2px #609f977e;
+}
+
+/* Body properties */
+.body-container{
+    margin: 80px;
+    width: 90%;
+    display: flex;
 }
 .title2 {
-    display: inline-block;
-    text-align: center;
-    font-size: 2rem;
-    padding: 2rem;
-    width: 15rem;
-    position: absolute; 
-    top: 25rem; 
-    left: 5rem;
-    color:aliceblue;
+    font-size: 1.5rem;
+    padding: 20px;
+    width: 25%;
     text-shadow: 2px 0px 2px #609f97;
+    display: flex;
 }
 .content{
-    padding-left: 30rem;
-    padding-top: 8rem;
-    width: 80%;
-    color:rgb(229, 230, 231);
+    width: 75%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-
-a{
-    padding: 20px;
+.schedu{
+    height: 900px;
 }
-
+.rules{
+    height: 1000px;
+}
 h4{
     padding: 10px;
     text-shadow: 1px 0px 1px #ff4400;
 }
-
 h4 a{
-    color: #ff4400;
+    color: #f7e02dcb;
 }
 p{
-    padding: 10px;
+    padding: 10px 0px;
     text-indent: 30px;
 }
-
-h3{
-    display: inline-block;
-    font-size: 1.5rem;
-    width: 15rem;
-    top: 45rem; 
-    left: 5rem;
-    color:aliceblue;
-    text-shadow: 2px 0px 2px #609f97;
+.schedu p{
+    text-align:justify;
+    text-indent: 0px;
 }
+ol.lower{
+    list-style-type: lower-latin;
+}
+.content p.underline{
+    text-decoration: underline;
+}
+.bold{
+    font-weight: bold;
+}
+.phone-email{
+    display: inline-block; 
+}
+.ol-indent{
+    padding-left: 20px;
+}
+.ul-indent{
+    padding-left: 40px;
+}
+.dt-strong{
+    font-weight: bold;
+    font-size: large;
+    padding: 7px;
+}
+/* Gallery properties */
 .gallery {
     margin: 10rem;
 }
-
-.gallery img {
-    display: inline-block;
-    width: 20%;
-    transition: all 300ms;
-    padding-bottom: 100px;
+.gallery h3{
+    font-size: 1.5rem;
+    text-shadow: 2px 0px 2px #609f97;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
 }
-
-.gallery img:hover{
-    transform: scale(1.3);
+.rules h3{
+    text-shadow: 2px 0px 2px #609f97;
+    display: flex;
+    justify-content:flex-start;
 }
-
-.index-img1{
-    position: absolute;
-    left: 300px;
+.images{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
 }
-.index-img2{
-    position: absolute;
-    right: 760px;
+.index-img{
+    max-width: 300px;
+    padding: 5px;
+    transition: 0.5s ease;
+    opacity: 0.8;
 }
-.index-img3{
-    position: absolute;
-    right: 300px;
+.index-img:hover{
+    transform: scale(1.5);
+    opacity: 1;
+    filter: contrast(120%);
 }
-
-
-
 
 /* Animation bounce effect background */
 @keyframes rebote_ball {
@@ -174,3 +212,29 @@ h3{
     }
 }
 
+/* Table properties */
+.table {
+    border-collapse: collapse;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px #f94200a4, -3px -3px 5px #f94200a4;
+    max-width: 800px;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.514);
+    width: 20%;
+    padding: 10px;
+    color: #baddd8;
+}
+tr{
+    background-color: transparent;
+}
+table .center{
+    text-align: center;
+}
+
+/* tr:hover td{
+    color: #609f97;
+    background-color: rgba(255, 255, 255, 0.329);
+} */
