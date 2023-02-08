@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mighty Ducks Hockey League - Registration</title>
+    <link rel="stylesheet" href="./src/css/style3.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">Mighty Ducks Hockey League</h1>
+        <nav class="nav">
+            <a href="./index.html">HOME</a>
+            <a href="./about-mdhl.html">ABOUT MDHL</a>
+            <a href="./ryp.html">RULES & POLICIES</a>
+            <a href="./schedule.html">SCHEDULE</a>
+            <a href="#">REGISTRATION</a>
+            <a href="./contact.html">CONTACT</a>
+        </nav>
+        <img class="index-logo" src="./src/assets/logo_MDHL.png" alt="Logo Mighty Ducks Hockey League">
+    </header>
+    <main>
+        <section class="body-container">
+            <h2 class="title2">Registration Form</h2>            
+            <form class=".regist-form" action="./src/assets/show_data.html" method="get">
+                <article class="lineform">
+                    <h4>Personal Information</h4> 
+                    <fieldset class="inl-inputs lineform">
+                        <label for="firstname">Player's First Name:</label>
+                        <input type="text" placeholder="James" name="firstname" id="firstname">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" placeholder="Smith" name="lastname" id="lastname">
+                    </fieldset>
+                    <fieldset class="inl-inputs lineform">
+                        <label for="street">Street Address:</label>
+                        <input type="text" placeholder="Madison Ave" name="street" id="street">
+                    </fieldset>
+                    <fieldset class="inl-inputs lineform">
+                        <label for="city">City:</label>
+                        <input type="text" placeholder="Manhattan" name="city" id="city">
+                        <label for="zipcode">Zip Code:</label>
+                        <input type="number" placeholder="10001" name="zipcode" id="zipcode">
+                    </fieldset>
+                    <fieldset class="bdate-select lineform">
+                        <label for="bdate">Birth Date:</label>
+                        <input class="b-date" type="date" placeholder="(mm/dd/yyyy)" name="bdate" id="bdate">
+                        <p>Gender:</p>
+                        <select class="sel-gender" name="gender" id="gender">
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="noanswer">No Answer</option>
+                        </select>
+                    </fieldset>  
+                    <p>Grade:</p>
+                    
+                    <fieldset class="checkbox">
+                        <fieldset class="row-check">
+                            <fieldset class="check"> 
+                                <input type="checkbox" name="pschool" id="pschool" value="pre-school">
+                                <label for="pschool">Pre-School</label>
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="1st" id="1st" value="1st">
+                                <label for="1st">1st</label>    
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="2nd" id="2nd" value="2nd">
+                                <label for="2nd">2nd</label>
+                            </fieldset>
+                        </fieldset>
+                        <fieldset class="row-check">
+                            <fieldset class="check">
+                                <input type="checkbox" name="3rd" id="3rd" value="3rd">
+                                <label for="3rd">3rd</label>
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="4th" id="4th" value="4th">
+                                <label for="4th">4th</label>
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="5th" id="5th" value="5th">
+                                <label for="5th">5th</label>
+                            </fieldset>
+                        </fieldset>
+                    </fieldset>
+                </article>
+                <article class="lineform">
+                    <h4>Which elementary school do you live near?</h4>
+                    <p>Closest School:</p>
+                    <fieldset class="checkbox">
+                        <fieldset class="row-check">
+                            <fieldset class="check">
+                                <input type="checkbox" name="school" id="ajkatzen" value="ajkatzen">
+                                <label for="ajkatzen">AJ Katzenmaier</label>        
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="school" id="marjorie" value="marjorie">
+                                <label for="marjorie">Marjorie P Hart</label>
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="school" id="greenbay" value="greenbay"> 
+                                <label for="greenbay">Greenbay</label>        
+                            </fieldset>
+                        </fieldset>
+                        <fieldset class="row-check">
+                            <fieldset class="check">
+                                <input type="checkbox" name="school" id="northelem" value="northelem"> 
+                                <label for="northelem">North Elementary</label>
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="school" id="howard" value="howard"> 
+                                <label for="howard">Howard A Yeager</label>
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="school" id="southelem" value="southelem">   
+                                <label for="southelem">South Elementary</label>
+                            </fieldset>
+                        </fieldset>
+                    </fieldset>
+                </article>
+                <article class="lineform">
+                    <h4>What position(s) do you normally play? (check all that apply)</h4>
+                    <fieldset class="checkbox">
+                        <fieldset class="row-check">
+                            <fieldset class="check">
+                                <input type="checkbox" name="position" id="forward" value="forward">
+                                <label for="forward">Forward</label>
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="position" id="midfield" value="midfield">
+                                <label for="midfield">Midfield</label>
+                            </fieldset>
+                        </fieldset>
+                        <fieldset class="row-check">
+                            <fieldset class="check">
+                                <input type="checkbox" name="position" id="defense" value="defense"> 
+                                <label for="defense">Defense</label>
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="position" id="goalkeeper" value="goalkeeper">   
+                                <label for="goalkeeper">Goalkeeper</label>
+                            </fieldset>
+                        </fieldset>
+                    </fieldset>
+                </article>
+                <article class="lineform">
+                    <h4>Uniform Size:</h4>
+                    <fieldset class="checkbox">
+                        <fieldset class="row-check">
+                            <fieldset class="check">
+                                <input type="checkbox" name="unisize" id="ys" value="youth-small">
+                                <label for="ys">Youth Small</label>
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="unisize" id="m" value="medium">
+                                <label for="m">Medium</label>
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="unisize" id="ym" value="youth-medium">
+                                <label for="ym">Youth Medium</label>
+                            </fieldset>
+                            
+                        </fieldset>
+                        <fieldset class="row-check">
+                            <fieldset class="check">
+                                <input type="checkbox" name="unisize" id="l" value="large">
+                                <label for="l">Large</label>
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="unisize" id="yl" value="youth-large"> 
+                                <label for="yl">Youth Large</label>
+                            </fieldset>
+                            <fieldset class="check">
+                                <input type="checkbox" name="unisize" id="el" value="extra-large"> 
+                                <label for="el">Extra-Large</label>
+                            </fieldset>
+                        </fieldset>
+                        <fieldset class="row-check">
+                            <fieldset class="check">
+                                <input type="checkbox" name="unisize" id="s" value="small"> 
+                                <label for="s">Small</label>
+                            </fieldset>
+                        </fieldset>
+                    </fieldset>
+                </article>
+                <article class="lineform">
+                    <h4>Permission to Play</h4>
+                    <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the “League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and voIunteers,incIuding the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities,which transportation.</p>
+                    <p>By signing below, I herebyagree andauthorizethe above.In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                    <fieldset class="inl-inputs">
+                        <label for="sign">Parent/GuardianSignature:</label>
+                        <input type="text" name="sign" id="sign">
+                        <label for="date">Date:</label>
+                        <input type="date" name="date" id="date"> 
+                    </fieldset>
+                </article>
+                <input type="submit" value="Send">
+            </form>
+        </section>  
+    </main>
+</body>
+</html>
